@@ -67,11 +67,15 @@ h2{
 	margin-bottom: 10px;
 }
 
+.AUT-label{
+	height: 25px;
+}
 
 
 
 
-.btn-check:active+.btn-icbat, .btn-check:checked+.btn-icbat, .btn-icbat.active, .btn-icbat:active, .show>.btn-icbat.dropdown-toggle{
+
+.icbat, .btn-check:active+.btn-icbat, .btn-check:checked+.btn-icbat, .btn-icbat.active, .btn-icbat:active, .show>.btn-icbat.dropdown-toggle{
 	background-color: blue;
 	border-color: blue;
 	color: white;
@@ -79,22 +83,34 @@ h2{
 }
 
 
-.btn-check:active+.btn-DDU, .btn-check:checked+.btn-DDU, .btn-DDU.active, .btn-DDU:active, .show>.btn-DDU.dropdown-toggle{
+.ddu, .btn-check:active+.btn-DDU, .btn-check:checked+.btn-DDU, .btn-DDU.active, .btn-DDU:active, .show>.btn-DDU.dropdown-toggle{
 	background-color: #FF01E4;
 	border-color: #FF01E4;
 	color: white;
 }
 
 
-.btn-check:active+.btn-inpatient, .btn-check:checked+.btn-inpatient, .btn-inpatient.active, .btn-inpatient:active, .show>.btn-inpatient.dropdown-toggle{
+.inpatient, .btn-check:active+.btn-inpatient, .btn-check:checked+.btn-inpatient, .btn-inpatient.active, .btn-inpatient:active, .show>.btn-inpatient.dropdown-toggle{
 	background-color: mediumpurple;
 	border-color: mediumpurple;
 	color: white;
 }
 
-.btn-check:active+.btn-cbat, .btn-check:checked+.btn-cbat, .btn-cbat.active, .btn-cbat:active, .show>.btn-cbat.dropdown-toggle{
+.cbat, .btn-check:active+.btn-cbat, .btn-check:checked+.btn-cbat, .btn-cbat.active, .btn-cbat:active, .show>.btn-cbat.dropdown-toggle{
 	background-color: #FFAE01;
 	border-color: #FFAE01;
+	color: black;
+}
+
+.home, .btn-check:active+.btn-home, .btn-check:checked+.btn-home, .btn-home.active, .btn-home:active, .show>.btn-home.dropdown-toggle{
+	background-color: white;
+	border-color: white;
+	color: black;
+}
+
+.any, .btn-check:active+.btn-any, .btn-check:checked+.btn-any, .btn-any.active, .btn-any:active, .show>.btn-any.dropdown-toggle{
+	background-color: grey;
+	border-color: grey;
 	color: black;
 }
 
@@ -167,10 +183,31 @@ h2{
 }
 
 .boarding-days{
-	background-color: #FFAE01;
-	color: black;
-	padding: 4 0 4 0;
+	padding:5px;
+	text-align: left;
 }
+
+
+
+
+.AUt-label{
+	height: 15px;
+	margin: 5px 0 0 5px;
+	float: right;
+}
+
+.label-sitter{
+	background-color: black;
+	color:  white;
+	border-radius: 10px;
+	font-size:  12px;
+	padding: 0 5px 0 5px;
+	margin-top: 2.5px;
+	float: right;
+}
+
+
+
 
 
 @media (min-width: 768px) {
