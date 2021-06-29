@@ -100,6 +100,7 @@ h2{
 .care-space-btn{
 	width: 100%;
 	padding: 10px 0 10px 0;
+	
 }
 
 
@@ -173,4 +174,8 @@ h2{
     visibility: visible;
   }
   
+}
+
+.navbar{
+	background-color: blue;
 }
