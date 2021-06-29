@@ -1,7 +1,7 @@
 
 
 body{
-        padding: 20px;
+
 
     }
 
@@ -44,8 +44,10 @@ h2{
 	margin: 2px;
 	border: none;
 	background-color: none;
-	padding: 5px;
+	padding: 5px 7px 5px 7px;
 	color:  black;
+	font-size: 10;
+	border-radius: 100px;
 }
 
 .label-danger{
@@ -64,6 +66,9 @@ h2{
 .label-row, .label-img{
 	margin-bottom: 10px;
 }
+
+
+
 
 
 .btn-check:active+.btn-icbat, .btn-check:checked+.btn-icbat, .btn-icbat.active, .btn-icbat:active, .show>.btn-icbat.dropdown-toggle{
