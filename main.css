@@ -46,7 +46,7 @@ h2{
 	background-color: none;
 	padding: 5px 7px 5px 7px;
 	color:  black;
-	font-size: 10;
+	font-size: 14;
 	border-radius: 100px;
 }
 
@@ -112,6 +112,10 @@ h2{
 	background-color: grey;
 	border-color: grey;
 	color: black;
+}
+
+.btn-primary, .btn-primary:hover{
+	background-color: #001e4b;
 }
 
 
@@ -235,3 +239,6 @@ h2{
 	font-weight: 100;
 }
 
+.data-graph{
+	padding: 30px;
+}

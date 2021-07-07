@@ -30,7 +30,7 @@
             <a class="nav-link" href="overview.html">Overview</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Updated: 07/07/21 13:00</a>
+            <a class="nav-link" href="">Updated: 07/07/21 15:30</a>
           </li>
         </ul>
       </div>
@@ -40,17 +40,43 @@
 
 
   <div class="container-fluid">
+
+    <div class="row master-row">
+      <div class="col-lg-12 col-md-12">
+        <div class="row-fluid"> <!--new row-->
+          <h1>Today's Overview</h1>
+          <div class="col-lg-3 col-6 kpi">
+            Total Boarders
+            <p class="KPI-numbers">8</p>
+          </div>
+          <div class="col-lg-3 col-6 kpi">
+            Total Inpatient BS
+            <p class="KPI-numbers">4</p>
+          </div>
+          <div class="col-lg-3 col-6 kpi">
+            Total Other BS
+            <p class="KPI-numbers">4</p>
+          </div>
+          <div class="col-lg-3 col-6 kpi">
+            Total CAPTU
+            <p class="KPI-numbers">4</p>
+          </div>
+        </div><!--close new row-->
+      </div>
+
     <div class="row master-row">
 
       <div class="col-lg-4 col-md-6 cat-level-1">
-        <h1>Baystate Boarding Centers</h1>
+       
         <button class="btn btn-primary care-space-btn" type="button" data-bs-toggle="collapse" data-bs-target="#pedied" aria-expanded="true" aria-controls="pedied">
 
           <!---------------------PEDIATRIC ED--------------------->
 
           <h2>Pediatric ED </h2>
-          <span class="label btn-warning">CENSUS: 5</span>
-          <span class="label btn-light">STAFF: UNKNOWN</span>
+          <span class="label btn-warning">CENSUS: 6</span>
+          <span class="label btn-inpatient active">IP: 5</span>
+          <span class="label btn-home active">TBD: 1</span>
+          <span class="label btn-any active">ANY: 1</span>
         </button>
         
 
@@ -172,6 +198,29 @@
          </div>
        </div> <!--close patient 1-->
      </div><!--close patient row-->
+     <div class="row-fluid"> <!--row with 2 patients -->
+        <div class="col-6 patient"><!--start patient 1-->
+          <p class="boarding-days home">J.J. <1 day
+            <span class="label-sitter">1:1</span>
+          </p>
+
+          <div class="row label-row">
+              <div class="col-12">
+                  <span class="label"><img class="label-img label-no" src="asset/DMH.png"></span>
+                  <span class="label"><img class="label-img label-no" src="asset/DYS.png"></span>
+                  <span class="label"><img class="label-img label-no" src="asset/DCF.png"></span>
+                  <span class="label"><img class="label-img label-no" src="asset/AUT.png"></span>
+              </div>
+          </div>
+          <div class="row label-row">
+            <div class="col-12">
+             <span class="label "><img class="label-img label-no" src="asset/PHYS.png"></span>
+             <span class="label "><img class="label-img label-no" src="asset/CHEM.png"></span>
+             <span class="label"><img class="label-img label-no" src="asset/RUN.png"> </span>
+           </div> 
+         </div>
+       </div> <!--close patient 1-->
+     </div><!--close patient row-->
 
 
 
@@ -185,7 +234,9 @@
    <button class="btn btn-primary care-space-btn mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#CHAD" aria-expanded="true" aria-controls="CHAD">
     <h2>CHAD</h2>
     <span class="label btn-warning">CENSUS: 2</span>
-    <span class="label btn-light">STAFF: UNKNOWN</span>
+    <span class="label btn-inpatient active">IP: 0</span>
+    <span class="label btn-home active">DDU: 1</span>
+    <span class="label btn-any active">ANY: 1</span>
   </button>
 
   <div class="cat-level-2 collapse dont-collapse-sm" id="CHAD">
@@ -254,18 +305,6 @@
 
 <!---------------------OPEN POTU--------------------->
 
-<button class="btn btn-primary care-space-btn mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#potu" aria-expanded="true" aria-controls="potu">
-  <h2>POTU</h2>
-  <span class="label btn-light">CENSUS: 0</span>
-  <span class="label btn-light">STAFF: UNKNOWN</span>
-</button>
-
-<div class="cat-level-2 collapse dont-collapse-sm" id="potu">
-  <div class="row-fluid"> <!--row with 2 patients -->
-
-
-  </div><!--close patient row-->
-</div><!--close POTU-->
 
 
 <!---------------------CLOSE POTU--------------------->
@@ -283,11 +322,10 @@
 
 <!--start blue situational awareness-->
 <div class="col-lg-4 col-md-6 cat-level-1"> 
-  <h1>Situational Awareness</h1>
+  
   <button class="btn btn-primary care-space-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="true" aria-controls="collapseExample3">
    <h2>CAPTU</h2>
    <span class="label btn-warning">CENSUS: 4</span>
-   <span class="label btn-light">STAFF: UNKNOWN</span>
  </button>
 
  <div class="cat-level-2 collapse dont-collapse-sm" id="collapseExample3"> <!--grey-->
@@ -380,7 +418,6 @@
 <button class="btn btn-primary care-space-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="true" aria-controls="collapseExample4">
  <h2>PICU</h2>
  <span class="label btn-light">CENSUS: 0</span>
- <span class="label btn-light">STAFF: UNKNOWN</span>
 </button>
 
 <div class="cat-level-2 collapse dont-collapse-sm" id="collapseExample4">
@@ -389,47 +426,62 @@
   </div><!--close patient row-->
 </div><!--close white-->
 
+
+<button class="btn btn-primary care-space-btn mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#potu" aria-expanded="true" aria-controls="potu">
+  <h2>POTU</h2>
+  <span class="label btn-light">CENSUS: 0</span>
+</button>
+
+<div class="cat-level-2 collapse dont-collapse-sm" id="potu">
+  <div class="row-fluid"> <!--row with 2 patients -->
+
+
+  </div><!--close patient row-->
+</div><!--close POTU-->
+
+
 </div><!-- close situational awareness-->
 
 
-<div class="col-lg-4 col-md-6 "> <!--start blue situational awareness-->
-
-  <div class="dashboard-key sticky-top">
-
-    <div class="cat-level-2">
-      <h2 class="text-L">Patient Icons</h2>
-      <div class="cat-level-3"> <!--white-->
-        <span class="label"><img class="label-img" src="asset/DMH.png"> Dept of Mental Heatlh (DMH)</span><br>
-        <span class="label"><img class="label-img" src="asset/DYS.png"> Dept of Youth Servies (DYS)</span><br>
-        <span class="label"><img class="label-img" src="asset/DCF.png"> Dept of Children and Families (DCF)</span><br>
-        <span class="label"><img class="label-img" src="asset/RUN.png"> Elopement Attempt</span><br>
-        <span class="label"><img class="label-img" src="asset/AUT.png"> Autism Spectrum</span><br>
-        <span class="label"><img class="label-img" src="asset/PHYS.png"> Physical Restraints Used</span><br>
-        <span class="label"><img class="label-img" src="asset/CHEM.png"> Chemical Restraints USed</span><br>
+<div class="col-lg-4 col-md-6"> <!--start blue situational awareness-->
+  <div class="row master-row">
+    <div class="dashboard-key sticky-top">
+      <div class="cat-level-2">
+        <h2 class="text-L">Patient Icons</h2>
+        <div class="cat-level-3"> <!--white-->
+          <span class="label"><img class="label-img" src="asset/DMH.png"> Dept of Mental Heatlh (DMH)</span><br>
+          <span class="label"><img class="label-img" src="asset/DYS.png"> Dept of Youth Servies (DYS)</span><br>
+          <span class="label"><img class="label-img" src="asset/DCF.png"> Dept of Children and Families (DCF)</span><br>
+          <span class="label"><img class="label-img" src="asset/RUN.png"> Elopement Attempt</span><br>
+          <span class="label"><img class="label-img" src="asset/AUT.png"> Autism Spectrum</span><br>
+          <span class="label"><img class="label-img" src="asset/PHYS.png"> Physical Restraints Used</span><br>
+          <span class="label"><img class="label-img" src="asset/CHEM.png"> Chemical Restraints USed</span><br>
+        </div>
       </div>
-    </div>
-    <div class="cat-level-2">
-      <h2 class="text-L">Placement Colors</h2>
-      <div class="cat-level-3"> <!--white-->
-        <button type="button" class="btn btn-cbat active"  autocomplete="off" aria-pressed="true">CBAT</button>
-        <button type="button" class="btn btn-icbat active"  autocomplete="off" aria-pressed="true">ICBAT</button>
-        <button type="button" class="btn btn-inpatient active"  autocomplete="off" aria-pressed="true">Inpatient</button>
-        <button type="button" class="btn btn-DDU active"  autocomplete="off" aria-pressed="true">DDU</button>
-        <button type="button" class="btn btn-any active "  autocomplete="off" aria-pressed="true">ANY</button>
-        <button type="button" class="btn btn-home active "  autocomplete="off" aria-pressed="true">HOME</button>
+      <div class="cat-level-2">
+        <h2 class="text-L">Placement Colors</h2>
+        <div class="cat-level-3"> <!--white-->
+          <button type="button" class="btn btn-cbat active"  autocomplete="off" aria-pressed="true">CBAT</button>
+          <button type="button" class="btn btn-icbat active"  autocomplete="off" aria-pressed="true">ICBAT</button>
+          <button type="button" class="btn btn-inpatient active"  autocomplete="off" aria-pressed="true">Inpatient</button>
+          <button type="button" class="btn btn-DDU active"  autocomplete="off" aria-pressed="true">DDU</button>
+          <button type="button" class="btn btn-any active "  autocomplete="off" aria-pressed="true">ANY</button>
+          <button type="button" class="btn btn-home active "  autocomplete="off" aria-pressed="true">TBD</button>
+        </div>
       </div>
-    </div>
-    <div class="cat-level-2">
-      <h2 class="text-L">Census & Staffing</h2>
-      <div class="cat-level-3"> <!--white-->
-        <button type="button" class="btn btn-danger active" autocomplete="off" aria-pressed="true">DANGER</button>
-        <button type="button" class="btn btn-warning active" autocomplete="off" aria-pressed="true">BORDERLINE</button>
-        <button type="button" class="btn btn-success active" autocomplete="off" aria-pressed="true">SAFE</button>
+      <!--<div class="cat-level-2">
+        <h2 class="text-L">Census & Staffing</h2>
+        <div class="cat-level-3">
+          <button type="button" class="btn btn-danger active" autocomplete="off" aria-pressed="true">DANGER</button>
+          <button type="button" class="btn btn-warning active" autocomplete="off" aria-pressed="true">BORDERLINE</button>
+          <button type="button" class="btn btn-success active" autocomplete="off" aria-pressed="true">SAFE</button>-->
 
       </div>
     </div>
   </div>
+
 </div>
+
 
 
 
