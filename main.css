@@ -114,19 +114,21 @@ h2{
 	color: black;
 }
 
-.btn-primary, .btn-primary:hover{
-	background-color: #001e4b;
+
+
+img{
+	width: 100%;
 }
-
-
-
-
-
 .care-space-btn{
 	margin-top: 10px;
 	width: 100%;
 	padding: 10px 0 10px 0;
 
+}
+
+.card{
+	font-size: 10px;
+	text-align: left
 }
 
 
@@ -211,6 +213,18 @@ h2{
 	float: right;
 }
 
+
+.btn-group-vertical>.btn, .btn-group>.btn{
+	flex: 0;
+}
+
+
+div.btn-group {
+    margin: 0 auto; 
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+}
 
 
 
