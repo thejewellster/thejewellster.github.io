@@ -48,7 +48,7 @@
         <button class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off" type="button">Wing</button>
         <button class="btn btn-outline-warning" data-bs-toggle="button" autocomplete="off" type="button">Adult</button>
         <button class="btn btn-outline-warning active" data-bs-toggle="button" autocomplete="off" type="button">Pedi</button> 
-        <button class="btn btn-outline-success active" data-bs-toggle="button" autocomplete="off" type="button">Include IP Tx</button> 
+        <button class="btn btn-outline-success active" data-bs-toggle="button" autocomplete="off" type="button">IP Units</button> 
       </div>
     </div>
   </div>
@@ -56,27 +56,27 @@
   <div class="container-fluid">
     <div class="row master-row">
         <div class="row-fluid"> <!--new row-->
-          <h1>Today's Overview as of 07/07/21 15:30</h1>
+          <h1>Today's Overview as of 00/00/00 00:00</h1>
           <div class="col-lg-2 offset-lg-1 col-sm-4 col-4 kpi">
             Total Boarders
             <p class="KPI-numbers">9</p>
           </div>
           <div class="col-lg-2 col-sm-4 col-4 kpi">
             Long Stays 
-            <p class="KPI-numbers">X</p>
+            <p class="KPI-numbers">6</p>
             
           </div>
           <div class="col-lg-2 col-sm-4 col-4 kpi">
              Safety Events
-            <p class="KPI-numbers">X</p>
+            <p class="KPI-numbers">2</p>
           </div>
           <div class="col-lg-2 offset-lg-0 offset-md-2 offset-sm-2 offset-2 col-4 kpi">
-            Intensive / High Risk
-            <p class="KPI-numbers">X</p>
+            Intensive Case Mgmt
+            <p style="color: red;"class="KPI-numbers">1</p>
           </div>
           <div class="col-lg-2 col-sm-4 col-4 kpi">
-            Crisis Wait Time
-            <p class="KPI-numbers">X</p>
+            Waiting for Crisis (ED)
+            <p class="KPI-numbers">1</p>
           </div>
           </div>
         </div>
@@ -84,7 +84,9 @@
     </div>
 
 <hr>
-    <div class="row master-row">
+    
+
+      <div class="row master-row">
         <div class="row-fluid"> <!--new row-->
           <div class="col-lg-4 col-12 kpi">
             Boarding
@@ -117,6 +119,12 @@
            <div class="col-lg-4 col-12 kpi">
             Long Stays
             <img src="asset/longstay.png">
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="CB5.5" checked>
+              <label class="form-check-label" for="CB5.5">
+                24 hours
+              </label>
+            </div>
              <div>
               <input class="form-check-input" type="checkbox" value="" id="CB5" checked>
               <label class="form-check-label" for="CB5">
@@ -167,7 +175,7 @@
         <div class="row-fluid"> <!--new row-->
           <h1></h1>
           <div class="col-lg-4 offset-lg-2 col-12 kpi">
-            High Risk  
+            Intensive Case Mgmt 
             <img src="asset/highrisk.png">
             <div >
               <input class="form-check-input" type="checkbox" value="" id="CB11">
@@ -195,8 +203,20 @@
             </div>
           </div>
           <div class="col-lg-4 col-12 kpi">
-            Wait time for BHN 
+            Crisis Wait Time
             <img src="asset/waittime.png">
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="cb15" checked>
+              <label class="form-check-label" for="cb15">
+                < 1 hour
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input" type="checkbox" value="" id="cb15" checked>
+              <label class="form-check-label" for="cb15">
+                >= 1 hour
+              </label>
+            </div>
           </div>
         </div><!--close new row-->
     </div>
@@ -204,7 +224,7 @@
 <hr>
 
     <div class="row master-row">
-      <h1>Patients on units as of 07/07/21 15:30</h1>
+      <h1>Today's Overview as of 00/00/00 00:00</h1>
       <!--open col 1-->
       <div class="col-lg-4 col-md-6 cat-level-1">
         <button class="btn btn-primary care-space-btn" type="button" data-bs-toggle="collapse" data-bs-target="#pedied" aria-expanded="true" aria-controls="pedied">
@@ -219,7 +239,7 @@
           <div class="row-fluid"> <!--row with 2 patients -->
            <div class="col-6 patient"><!--start patient 1-->
             <p class="boarding-days any">
-              <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white;">J.A. CLICK ME</a>
+              <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white;">J.A. 5 days</a>
               <span class="label-sitter">1:4</span>
             </p>
             <div class="row label-row">
@@ -248,9 +268,10 @@
               <br>PR: 0
               <br>CR: 3
               <br>SRS/WPV: 1
-              <br>YTD ED visits: 4
-              <br><br><b>Crisis Update 7/7/21 08:30</b> DMH expedited as of 7/7/21.
-              <br><b>Crisis Update 7/6/21 09:30</b> Hard to place due to seizure disorder, IP/CBAT search underway, Mom doesn't want patient to go to farther than 30 miles.
+              <br>YTD Visits: 2
+              <br>YTD Days: 24
+              <br><br><b>CM Update 7/7/21 08:30</b> DMH expedited as of 7/7/21.
+              <br><b>CM Update 7/6/21 09:30</b> Hard to place due to seizure disorder, IP/CBAT search underway, Mom doesn't want patient to go to farther than 30 miles.
 
               
             </div>
@@ -380,16 +401,15 @@
     <button class="btn btn-primary care-space-btn mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#CHAD" aria-expanded="true" aria-controls="CHAD">
     <h2>CHAD</h2>
     <span class="label btn-warning">CENSUS: 3</span>
-    <span class="label btn-inpatient active">IP: 0</span>
-    <span class="label btn-ddu active">DDU: 1</span>
+    <span class="label btn-inpatient active">IP: 1</span>
     <span class="label btn-any active">ANY: 2</span>
   </button>
 
   <div class="cat-level-2 collapse dont-collapse-sm" id="CHAD">
 
     <div class="row-fluid"> <!--row with 2 patients -->
-     <div class="col-6 patient"><!--start patient 1-->
-      <p class="boarding-days DDU">G.B. 41 days
+     <div class="col-6 patient" style="border-color:red;"><!--start patient 1-->
+      <p class="boarding-days inpatient">A.A. 30 days
       <span class="label-sitter">1:1</span>
       </p>
       <div class="row label-row">
