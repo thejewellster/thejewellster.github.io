@@ -54,34 +54,42 @@
   </div>
 
   <div class="container-fluid">
+    <hr>
     <div class="row master-row">
-        <div class="row-fluid"> <!--new row-->
-          <h1>Today's Overview as of 00/00/00 00:00</h1>
-          <div class="col-lg-2 offset-lg-1 col-sm-4 col-4 kpi">
-            Total Boarders
-            <p class="KPI-numbers">#</p>
+        <div class="col-lg-6">
+           <h1>Current Status as of 00/00/00 00:00</h1>
+            <div class="col-6 col-md-4 kpi">
+              Total Boarders
+              <p class="KPI-numbers">#</p>
+            </div>
+            <div class="col-6 col-md-4  kpi">
+              Long Stays 
+              <p class="KPI-numbers">#</p>
+            </div>
+            <div class="col-6 col-md-4 kpi " style="color: red;">
+              Intensive Case Mgmt
+            <p style="color: red;"class="KPI-numbers">#</p>
           </div>
-          <div class="col-lg-2 col-sm-4 col-4 kpi">
-            Long Stays 
-            <p class="KPI-numbers">#</p>
-            
-          </div>
-          <div class="col-lg-2 col-sm-4 col-4 kpi">
+        </div>
+
+        <div class="col-lg-6">
+          <h1>24-hour Lookback as of 00/00/00 00:00</h1>
+          
+         
+          <div class=" col-6  kpi">
              Safety Events
             <p class="KPI-numbers">#</p>
           </div>
-          <div class="col-lg-2 offset-lg-0 offset-md-2 offset-sm-2 offset-2 col-4 kpi">
-            Intensive Case Mgmt
-            <p style="color: red;"class="KPI-numbers">#</p>
-          </div>
-          <div class="col-lg-2 col-sm-4 col-4 kpi">
-            Waiting for Crisis (ED)
+          
+          <div class="col-6 kpi">
+            Crisis Wait Time
             <p class="KPI-numbers">#</p>
           </div>
-          </div>
+           
         </div>
       </div>
-    </div>
+
+
 
 <hr>
     
@@ -89,10 +97,10 @@
       <div class="row master-row">
         <div class="row-fluid"> <!--new row-->
           <div class="col-lg-4 col-12 kpi">
-            Boarding
+            Boarders
             <img src="asset/boarding.png">
             <div>
-              <input class="form-check-input" type="checkbox" value="" id="CB1">
+              <input class="form-check-input" type="checkbox" value="" id="CB1" checked>
               <label class="form-check-label" for="B1">
                 IP
               </label>
@@ -178,7 +186,7 @@
             Intensive Case Mgmt 
             <img src="asset/highrisk.png">
             <div >
-              <input class="form-check-input" type="checkbox" value="" id="CB11">
+              <input class="form-check-input" type="checkbox" value="" id="CB11" checked>
               <label class="form-check-label" for="CB11">
                 IP
               </label>
@@ -224,7 +232,7 @@
 <hr>
 
     <div class="row master-row">
-      <h1>Today's Overview as of 00/00/00 00:00</h1>
+      <h1>Current Status as of 00/00/00 00:00</h1>
       <!--open col 1-->
       <div class="col-lg-4 col-md-6 cat-level-1">
         <button class="btn btn-primary care-space-btn" type="button" data-bs-toggle="collapse" data-bs-target="#pedied" aria-expanded="true" aria-controls="pedied">
